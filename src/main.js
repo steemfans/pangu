@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue';
 import {
   Layout,
   Menu,
@@ -8,13 +8,13 @@ import {
   Card,
   List,
   Tooltip,
-  Button
-} from 'ant-design-vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+  Button,
+} from 'ant-design-vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 const components = [
   Layout,
   Menu,
@@ -29,12 +29,12 @@ const components = [
   List.Item,
   List.Item.Meta,
   Tooltip,
-  Button
-]
-components.map((component) => Vue.use(component))
+  Button,
+];
+components.map((component) => Vue.use(component));
 
 new Vue({
   router,
   store,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount('#app');
